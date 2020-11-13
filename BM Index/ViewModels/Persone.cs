@@ -64,7 +64,11 @@ namespace BM_Index.ViewModels
             }
         }
 
-    }
+        
+        
+
+
+        }
     public enum Sex
     {
         [Display(Name = "Мужчина")]
@@ -73,6 +77,8 @@ namespace BM_Index.ViewModels
         [Display(Name = "Женщина")]
         Woman = 1
     }
+
+    
 }
 
 

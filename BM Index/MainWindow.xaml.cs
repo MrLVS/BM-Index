@@ -31,6 +31,7 @@ namespace BM_Index
         {
             WindowActivity windowActivity = new WindowActivity();
             windowActivity.ShowDialog();
+
         }
     }
 }
