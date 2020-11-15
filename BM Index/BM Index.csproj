@@ -69,6 +69,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commands\Base\Command.cs" />
     <Compile Include="ViewModels\IndexCalculation.cs" />
     <Compile Include="ViewModels\Persone.cs" />
     <Compile Include="WindowActivity.xaml.cs">
