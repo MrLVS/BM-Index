@@ -4,12 +4,26 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using DevExpress.Mvvm;
 
 namespace BM_Index.ViewModels
 {
+    
+
+
+
+
     public class Persone : ViewModelBase
     {
+        public ICommand CloseAppCommand { get; }
+        private bool CanCloseAppCommandExecuted(object p) => true;
+
+        private void OnCloseAppCommandExecuted(object p)
+        {
+
+        }
+
         private double myWeightPersone;
         private int myAge;
         private int myHeight;

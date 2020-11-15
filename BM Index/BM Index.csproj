@@ -88,8 +88,6 @@
     <Compile Include="Commands\LambdaCommand.cs" />
     <Compile Include="ViewModels\IndexCalculation.cs" />
     <Compile Include="ViewModels\Persone.cs" />
-    <Compile Include="ViewModel\MainViewModel.cs" />
-    <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="WindowActivity.xaml.cs">
       <DependentUpon>WindowActivity.xaml</DependentUpon>
     </Compile>
