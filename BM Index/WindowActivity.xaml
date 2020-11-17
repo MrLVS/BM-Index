@@ -3,9 +3,11 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:cmd="clr-namespace:BM_Index.Commands"
     Title="Body Mass Index App" Height="600" Width="600">
 
     <Grid>
+        <Button Content ="EXIT" Command="{Binding CloseApplicationCommand}"></Button>
 
     </Grid>
 </dx:ThemedWindow>

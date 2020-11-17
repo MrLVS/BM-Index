@@ -8,10 +8,10 @@
     xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
     xmlns:viewModels="clr-namespace:BM_Index.ViewModels"
     Title="Body Mass Index App" Height="420" Width="500" Background="#FFA7C9FB">
-    <Grid>
+     <Grid>
         <Border MinWidth="300" MaxWidth="500" MinHeight="350"
-                Margin="20" Background ="#FFC8EADF"
-                CornerRadius="25" Padding="30"
+                Margin="15" Background ="#FFC8EADF"
+                CornerRadius="25" Padding="20"
                 VerticalAlignment="Center">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="10"/>
@@ -42,6 +42,7 @@
                     </dxe:ComboBoxEdit>
                 <Button
                         Click="Button_Click"
+                        Command="{Binding }"
                         Style="{StaticResource MaterialDesignRaisedButton}"
                         materialDesign:ButtonProgressAssist.Value="-1"
                         materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"

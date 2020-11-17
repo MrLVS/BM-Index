@@ -12,13 +12,13 @@ namespace BM_Index.ViewModels
 
     {
 
-        public IndexCalculation(Persone p)
+        public IndexCalculation()
         {
-            Persone = Persone;
+            
         }
 
 
-        double a = Math.Round(145.4 / Math.Pow(64.4 / 100.0, 2.0), 2);
+        //double a = Math.Round(145.4 / Math.Pow(64.4 / 100.0, 2.0), 2);
 
         public Persone Persone { set; get; }
 

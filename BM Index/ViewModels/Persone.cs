@@ -2,32 +2,26 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Net.Mime;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
+using BM_Index.Commands;
 using DevExpress.Mvvm;
 
 namespace BM_Index.ViewModels
 {
-    
-
-
-
 
     public class Persone : ViewModelBase
     {
-        public ICommand CloseAppCommand { get; }
-        private bool CanCloseAppCommandExecuted(object p) => true;
 
-        private void OnCloseAppCommandExecuted(object p)
-        {
-
-        }
 
         private double myWeightPersone;
         private int myAge;
         private int myHeight;
         private Sex mySexPersone;
+
 
         public double Weight
         {
@@ -78,11 +72,29 @@ namespace BM_Index.ViewModels
             }
         }
 
-        
-        
+        #region Commands
 
+        public ICommand CloseApplicationCommand { get; }
 
+        private bool CanCloseApplicationCommandExecute(object p) => true;
+
+        private void OnCloseApplicationCommandExecuted(object p)
+        {
+            Application.Current.Shutdown();
         }
+
+        #endregion
+        
+        public Persone()
+        {
+            CloseApplicationCommand = new LambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecute);
+        }
+
+
+
+
+
+    }
     public enum Sex
     {
         [Display(Name = "Мужчина")]
@@ -92,7 +104,7 @@ namespace BM_Index.ViewModels
         Woman = 1
     }
 
-    
+
 }
 
 
